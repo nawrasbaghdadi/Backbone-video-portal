@@ -1,0 +1,31 @@
+
+<% if(this.model){ %>
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title"><%= this.model.name %></h4>
+<% console.log(this.model); %>
+      </div>
+      <div class="modal-body">
+         <div class="row">
+            <div class="col-sm-12">
+              <video width="" height="" controls id="video">
+                <source src="<%= this.model.url%>" type="video/mp4">
+              </video>
+            </div>
+          </div>
+
+      </div>
+      
+        <div class="col-sm-12">
+        <p><%= this.model.description%></p>
+      
+      </div>
+    
+      <div class="modal-footer">
+  <div id="msg"></div>
+     <input id="input-4-xs" name="input-4" class="rating rating-loading all-rating" data-show-clear="false" data-show-caption="false" data-size="xs" value="<%= calculateRating(this.model.ratings) %>" />  </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+<% }%>
