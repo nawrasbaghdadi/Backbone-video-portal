@@ -2,6 +2,7 @@
 Dashboard reading API from backend
 -login form with user and password,
 -when login list of videos will appear so user will see and rate the video
+
 #### Running the application ####
 1- extract the content of the folder and put it in the client folder in the portal appliation
 2- Run the Backend 
@@ -12,6 +13,9 @@ Dashboard reading API from backend
 3- go to localhost:3000
 4- and you will see the loginform
 5-users-name : harry - password : password
+
+#### Wink Folder ####
+video showing how this app work
 
 #### About the Frontend Developemnt ####
 Librayies i used :
